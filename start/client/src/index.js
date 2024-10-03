@@ -1,6 +1,6 @@
 import './style.css';
 // Assuming you still want to use environment variables, remove BACKEND_URL if not needed
-// import { BACKEND_URL } from './env';
+import { BACKEND_URL } from './env';
 
 const app = new Vue({
     el: '#app',
