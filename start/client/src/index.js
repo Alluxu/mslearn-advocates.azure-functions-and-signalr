@@ -12,7 +12,7 @@ const app = new Vue({
         async getStocks() {
             try {
 
-                const url = `${BACKEND_URL}/api/getStocks`;
+                const url = `https://api-alvar.azurewebsites.net/api/getStocks`;
                 console.log('Fetching stocks from ', url);
 
                 const response = await fetch(url);
@@ -32,7 +32,7 @@ const app = new Vue({
 
 const connect = () => {
 
-    const signalR_URL = `${BACKEND_URL}/api`;
+    const signalR_URL = `https://api-alvar.azurewebsites.net/api`;
     console.log(`Connecting to SignalR...${signalR_URL}`)
 
     const connection = new signalR.HubConnectionBuilder()
